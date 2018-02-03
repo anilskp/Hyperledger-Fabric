@@ -8,7 +8,7 @@ composer archive create -t dir -n ../
 composer runtime install -c PeerAdmin@hlfv1 -n app2-bna
 
 -- Deploy BNA (Business network application) to the Fabric
-composer network start -a ./app2-bna@0.0.1.bna -A admin -S adminpwd -c PeerAdmin@hlfv1
+composer network start -a ./app2-bna@0.0.1.bna -A admin -S adminpw -c PeerAdmin@hlfv1
 
 -- Import card 
 composer card import -f  ./admin@app2-bna.card
