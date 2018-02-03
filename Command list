@@ -15,3 +15,10 @@ composer card import -f  ./admin@app2-bna.card
 
 
 composer network ping -c admin@app2-bna
+
+
+-- Start the REST server.
+composer-rest-server 
+
+-- to access the explorer
+http://192.168.135.50:3000/explorer/
