@@ -1,0 +1,14 @@
+yo hyperledger-composer
+
+--To crerate an archive
+composer archive create -t dir -n ../
+
+
+composer runtime install -c PeerAdmin@hlfv1 -n app2-bna
+
+
+composer network start -a ./app2-bna@0.0.1.bna -A admin -S adminpwd -c PeerAdmin@hlfv1
+
+composer card import -f  ./admin@app2-bna.card
+
+composer network ping -c admin@app2-bna
