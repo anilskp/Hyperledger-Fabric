@@ -13,7 +13,7 @@ composer network start -a ./app2-bna@0.0.1.bna -A admin -S adminpw -c PeerAdmin@
 -- Import card 
 composer card import -f  ./admin@app2-bna.card
 
-
+--Ping the Business network application
 composer network ping -c admin@app2-bna
 
 
