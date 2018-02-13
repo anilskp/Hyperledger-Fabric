@@ -22,3 +22,10 @@ composer-rest-server
 
 -- to access the explorer
 http://192.168.135.50:3000/explorer/
+
+
+composer network deploy -a ./archive.bna -c PeerAdmin@hlfv1 -A admin -S adminpw
+
+composer participant add -d '{"$class":"org.acme.airline.participant.ACMENetworkAdmin","participantKey":"johnd","contact":{"$class":"org.acme.airline.participant.Contact","fName":"John","lname":"Doe","email":"john.doe@acmeairline.com"}}' -c admin@airlinev8
+
+composer identity issue -u johnd -a org.acme.airline.participant.ACMENetworkAdmin#johnd -c admin@airlinev8 -x
